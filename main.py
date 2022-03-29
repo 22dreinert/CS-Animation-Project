@@ -9,8 +9,8 @@ os.environ['SDL_VIDEO_CENTERED'] = '1'
 pygame.init()
 
 # constants
-WIDTH = 400
-HEIGHT = 300
+WIDTH = 1440
+HEIGHT = 900
 FPS = 3
 
 # RGB colors
