@@ -32,7 +32,7 @@ pygame.image.load('./assets/sarah_v1_3.png')
 
 # changes size of all images to fit screen
 for i in range(len(my_images)):
-  my_images[i] = pygame.transform.scale(my_images[i], (200, 200))
+  my_images[i] = pygame.transform.scale(my_images[i], (400, 400))
 
 # set Window
 WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -40,7 +40,7 @@ pygame.display.set_caption("Turtle")
 WINDOW.fill(white)
 
 # set up your font
-font = pygame.font.Font('./fonts/Roboto-Medium.ttf', 12)
+font = pygame.font.Font('./fonts/Roboto-Medium.ttf', 30)
 
 # create your text
 text1 = font.render('hello', True, black, white)
@@ -51,9 +51,9 @@ text2Rect = text2.get_rect()
 text3Rect = text3.get_rect()
 
 # position the text
-text1Rect.center = (WIDTH // 2, HEIGHT // 7)
-text2Rect.center = (WIDTH // 1.3, HEIGHT // 3)
-text3Rect.center = (WIDTH // 1.3, HEIGHT // 2)
+text1Rect.center = (WIDTH // 2, HEIGHT // 9)
+text2Rect.center = (WIDTH // 2, HEIGHT // 6)
+text3Rect.center = (WIDTH // 2, HEIGHT // 4)
 # display text
 WINDOW.blit(text1, text1Rect)
 WINDOW.blit(text2, text2Rect)
@@ -66,7 +66,7 @@ def drawShape():
   global image_count
   if (image_count == 3):
     image_count = 0
-  WINDOW.blit(my_images[image_count], (0, 100))
+  WINDOW.blit(my_images[image_count], (510, 300))
   pygame.display.flip()
   image_count += 1
   
